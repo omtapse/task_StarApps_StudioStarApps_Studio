@@ -1,0 +1,170 @@
+body,
+p {
+    margin: 0;
+    padding: 0;
+    font-family: 'system-ui'
+}
+
+.parent {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.leftSideDiv {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageContainer {
+    position: relative;
+    height: 29rem;
+    width: 29rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s ease-in;
+    opacity: 1;
+}
+
+.blueUbrella {
+    height: 29rem;
+    position: absolute;
+}
+
+#previewLogoImage {
+    height: 2rem;
+    position: absolute;
+    bottom: 7%;
+}
+
+.loaderImage {
+    width: 11rem;
+    height: 11rem;
+    animation: spin 2s infinite linear;
+    transition: opacity .5s ease-out;
+    opacity: 0;
+    fill: #00a3e0;
+    position: absolute;
+}
+
+.rightSideDiv {
+    width: 40%;
+    margin-left: 5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.rightSideDiv h1 {
+    letter-spacing: 2px;
+    font-size: 4rem;
+}
+
+.colorPallet {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    justify-content: space-between;
+}
+
+svg {
+    color: #000;
+}
+
+.color {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+}
+
+.selected#blue {
+    border: 10px solid #80d1f0;
+}
+
+.selected#pink {
+    border: 10px solid #f3b6d6;
+}
+
+.selected#yellow {
+    border: 10px solid #f1dfa4;
+    ;
+}
+
+#blue {
+    background-color: #00a3e0;
+}
+
+#yellow {
+    background-color: #fed141;
+}
+
+#pink {
+    background-color: #d0006f;
+}
+
+.detaillsContainer {
+    width: 92%;
+    display: flex;
+    flex-direction: column;
+    margin: 2.5rem 0;
+}
+
+.detaillsContainer h2 {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+.detaillsContainer h5 {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.detaillsContainer p {
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: 400;
+    margin-bottom: 1.3rem;
+}
+
+.uploadButton {
+    background-color: #00a3e0;
+    padding: 1rem;
+    display: flex;
+    color: white;
+    font-weight: 600;
+    align-items: center;
+    text-align: center;
+}
+
+.uploadTextContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.uploadTextContainer p {
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+#uploadicon{
+    transition: opacity 1s ease-in;
+    position: absolute;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
